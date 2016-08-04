@@ -1,6 +1,7 @@
 #include <vector>
 #include <map>
 #include <string>
+#include "stdint.h"
 #include <boost/numeric/ublas/matrix.hpp>
 
 using namespace boost::numeric;
@@ -12,7 +13,7 @@ namespace clustering {
 		typedef ublas::matrix<double> ClusterData;
 		typedef std::vector<uint32_t> Neighbors;
 		typedef std::vector<int32_t> Labels;
-		typedef std::map<int32_t, std::vector<uint32_t>> ClusterMap;
+		typedef std::map<int32_t, std::vector<uint32_t> > ClusterMap;
 
 		DBSCAN(double eps, size_t minPts, int num_threads=1);
 		DBSCAN();

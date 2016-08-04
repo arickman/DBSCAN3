@@ -7,6 +7,7 @@
 #include <boost/numeric/ublas/io.hpp>
 #include <boost/algorithm/minmax.hpp>
 #include <vector>
+#include "stdint.h"
 #include <omp.h>
 
 #include "dbscan.h"
